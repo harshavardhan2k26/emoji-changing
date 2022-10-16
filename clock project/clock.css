@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-image: radial-gradient(circle, #635e94, #060227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+.clock {
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    border: 5px solid rgba(9, 6, 17,1);
+    background-color: #060227;
+    opacity: 0.9;
+    position: relative;
+    
+    z-index: 2;
+}
+.numbers {
+    width: 45vw;
+    height: 45vw;
+    position: absolute;
+    color : white;
+    font-weight: bold;
+    z-index: 3;
+    
+
+}
+.tewl {
+    position: absolute;
+     top: 6px;
+     left: 50%;
+     transform: translate(-50%);
+     
+}
+.three{
+    position: absolute;
+    top: 50%;
+    right:15px; 
+    transform: translateY(-50%); 
+}
+.six {
+    position: absolute;
+    bottom: 15px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.nine {
+    position: absolute;
+    top: 50%;
+    left:5px; 
+    transform: translateY(-50%); 
+}
+.arrows{
+    width: 45vw;
+    height: 45vw;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrows::before{
+    content: "";
+    height: 6vw;
+    width: 6vw;
+    z-index: 6;
+    background-color: #635e94 ;
+    border-radius: 50% ;
+
+}
+.arrows div {
+   background-color : white;
+    width: 1.5vw;
+    height: 10vw;
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom center;
+    z-index: 5;
+   border-radius: 50% 50% 0 0;
+}
+.arrows .hour {
+    height: 12vw;
+    width: 1.5vw;
+    transform: rotate(30deg);
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #635e94 ;
+    font-size: 1.5vw;
+
+}
+.arrows .minute {
+    height: 17vw;
+    transform: rotate(60deg);
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #635e94 ;
+    font-size: 1.5vw;
+
+}
+.arrows .second {
+    height: 22vw;
+    transform: rotate(270deg);
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #635e94 ;
+    font-size: 1.5vw;
+
+}
+@media only screen and (max-width: 600px){
+
+.clock {
+    width: 90vw;
+    height: 90vw;
+}
+.numbers {
+    width: 90vw;
+    height: 90vw;
+}
+.arrows{
+    width: 90vw;
+    height: 90vw;
+    
+}
+.arrows .hour {
+    height: 15vw;
+    width: 2vw;
+    font-size: 2vw;
+}
+.arrows .minute{
+    height: 25vw;
+    width: 2vw;
+    font-size: 2vw;
+}
+.arrows .second {
+    height: 35vw;
+    width: 1.5vw;
+    font-size: 2vw;
+}
+}

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+body {
+    background-image: linear-gradient(180deg ,#FF886A,#FCF6CF);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    z-index: 1;
+
+}
+
+.heading{
+    margin: 10vh 10vh;
+}
+.percentage {
+    text-align: center;
+    font-size: 6vh;
+    margin-bottom: 1vh;
+}
+.load-con{
+     position:relative;
+}
+
+.front-loader{
+    height: 1vh;
+    background-color: #eb3f14;
+    border: 1px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 3;
+    
+
+}
+.back-loader{
+    height: 1vh;
+    background-color: #f8f3f1;
+    width: 100%;
+    border: 1px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+}
