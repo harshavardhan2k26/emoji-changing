@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.emoji {
+    font-size: 15rem;
+    cursor:  pointer;
+    user-select: none;
+}
+.smiley {
+    display: none;
+}
+.sad {
+    display: none;
+
+}
+.active{
+    display: block;
+}
